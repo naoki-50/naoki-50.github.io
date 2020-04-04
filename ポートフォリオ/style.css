@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width: 100%;
+}
+
+#loading{
+	text-align: center;
+	margin-top: 300px;
+}
+
+#wrap{
+	display: none;
+}
+
+#twitter{
+	color: rgb(71, 192, 248);
+	font-size: 25px;
+	padding: 10px;
+	position: fixed;
+	right: 100px;
+	top:30px;
+	border: solid 1px rgb(71, 192, 248);
+	border-radius: 50%;
+}	
+
+#menu-icon{
+	padding: 20px;
+	background-color: #fff;
+	position: fixed;
+	right: 20px;
+	top: 20px;	
+	font-size: 35px;
+	-webkit-text-stroke: 3px white;
+	border:solid 1px black;
+	border-radius: 50%;
+	z-index: 100;
+}
+
+#white{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(255,255,255,0.5);
+	display: none;
+}
+
+#menu-text{
+	position: fixed;
+	top: 0;
+	right: -500px;
+	z-index:2;
+	background-color: #fff;
+	width: 350px;
+	height: 800px;
+	text-align: center;
+	box-shadow: 0 0 8px gray;
+}
+
+#menu-text ul{
+	padding-top: 20px;
+	line-height: 80px;
+	font-size: 30px;
+	padding-bottom: 50px;
+	color: black;
+}
+
+#menu-text a{
+	text-decoration: none;
+	color: black;
+}
+
+#close{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: rgba(230, 228, 228, 0.5);
+	font-size: 35px;
+	padding: 30px 42px;
+	-webkit-text-stroke: 0.8px white;
+	display: none;
+
+}
+
+#top-text{
+	padding-top: 300px;
+	margin-left: 100px;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	margin: calc(50vh - 150px) auto;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	float: right;
+  }
+  
+  /* アニメーション設定 */
+  .arrowWrap {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 200px
+  }
+  
+  .arrowInner p {
+	font-size: 12px;
+	text-align: end;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+  }
+  
+  .arrow {
+	width: 1px;
+	height: 100px;
+	margin: 50px auto 0;
+	background-color: #eee;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .arrow::before {
+	content: '';
+	width: 1px;
+	height: 100px;
+	margin: 50px auto 0;
+	background-color: #000;
+	position: absolute;
+	top: -150px;
+	left: 0;
+	-webkit-animation: arrow 2.5s ease 0s infinite normal;
+	animation: arrow 2.5s ease 0s infinite normal;
+  }
+  
+  @keyframes arrow {
+	0% {
+	  -webkit-transform: translate3d(-50%, 0, 0);
+	  transform: translate3d(-50%, 0, 0);
+	}
+  
+	60% {
+	  -webkit-transform: translate3d(-50%, 100px, 0);
+	  transform: translate3d(-50%, 100px, 0);
+	}
+  
+	100% {
+	  -webkit-transform: translate3d(-50%, 100px, 0);
+	  transform: translate3d(-50%, 100px, 0);
+	}
+  }
+
+.habilidades_contenedor {
+	width: 100%;
+	margin-top: 500px;
+}
+	h2{text-align:center;}
+
+#codeconSkills {
+	font-size: 12px;
+	height: auto;
+	margin: 0 auto;
+	padding: 10px;
+	width: 80%;
+}
+
+.codeconSkillbar {
+	width: 90%;
+	height: 100px;
+	position: relative;
+	background: rgba(17, 17, 17, .3);
+	margin: 20px auto;
+}
+#codeconHTML {
+	width: 100%;
+	animation: Animate-HTML 4s;
+	-webkit-animation: Animate-HTML 4s;
+	-moz-animation: Animate-HTML 4s;
+	-o-animation: Animate-HTML 4s;
+	height: 100px;
+	position: absolute;
+	background-color: #ea8564;
+}
+	@keyframes Animate-HTML {
+	from {
+	width: 10px;
+	}
+	to {
+	width: 100%}
+	}@-webkit-keyframes Animate-HTML {
+	from {
+	width: 10px;
+	}
+	to {
+	width: 100%}
+	}@-moz-keyframes Animate-HTML {
+	from {
+	width: 10px;
+	}
+	to {
+	width: 100%}
+	}@-o-keyframes Animate-HTML {
+	from {
+	width: 10px;
+	}
+	to {
+	width: 100%}
+	}
+#codeconCSS {
+	animation: Animate-CSS 5s;
+	-webkit-animation: Animate-CSS 5s;
+	-moz-animation: Animate-CSS 5s;
+	-o-animation: Animate-CSS 5s;
+	width: 70%;
+	height: 100px;
+	position: absolute;
+	background-color: #55a69f;
+}
+@keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 70%}
+}@-webkit-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 70%}
+}@-moz-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 70%}
+}@-o-keyframes Animate-CSS {
+from {
+width: 10px;
+}
+to {
+width: 70%}
+}
+#codeconjQuery {
+	animation: Animate-jQuery 5s;
+	-webkit-animation: Animate-jQuery 5s;
+	-moz-animation: Animate-jQuery 5s;
+	-o-animation: Animate-jQuery 5s;
+	width: 50%;
+	height: 100px;
+	position: absolute;
+	background-color: #99856d;
+}
+
+.skillBar {
+	width: 5%;
+	height: 100px;
+	position: absolute;
+	background-color: transparent;
+	transition: 3s;
+	-webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+} 
+
+@keyframes Animate-jQuery {
+from {
+	width: 10px;
+}
+to {
+	width: 50%}
+}
+@-webkit-keyframes Animate-jQuery {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50%
+	}
+}
+@-moz-keyframes Animate-jQuery {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50%
+	}
+}
+@-o-keyframes Animate-jQuery {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50%
+	}
+}
+#codeconCakePHP {
+	animation: Animate-CakePHP 5s;
+	/*-webkit-animation: Animate-jQuery 5s;
+	-moz-animation: Animate-jQuery 5s;
+	-o-animation: Animate-jQuery 5s;*/
+	width: 60%;
+	height: 50px;
+	position: absolute;
+	background-color: #2f96b4;
+}
+
+@keyframes Animate-CakePHP {
+from {
+		width: 10px;
+}
+to {
+		width: 60%
+	}
+}
+
+
+.codeconSkillArea {
+	z-index: 1;
+	float: left;
+	//position: absolute;
+	margin-top: 15px;
+	margin-left: 15px;
+	text-shadow: none;
+	color: #fff;
+	//font-family: Lato-Regular, sans-serif;
+	font-size: 12px;
+}
+.PercentText {
+	z-index: 3;
+	position: relative;
+	padding-right: 15px;
+	margin-top: 15px;
+	float: right;
+	text-shadow: none;
+	color: #fff;
+	//font-family: Lato-Regular, sans-serif;
+	font-size: 12px;
+}
